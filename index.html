@@ -9,158 +9,156 @@
 <link rel="icon" 
       type="image/png" 
       href="./images/favicon.ico">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+      
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
- 
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-  
-  <br>
-  <br>
-  <br>
-  
-    <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
-        target="_blank"
-        href= "https://www.facebook.com/dave.davis.3781995">
-        <img src="./images/facebook.png" alt="facebook" class="w3-image" width="35px" height="35px">
-        
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+   
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
     </a>
-    <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
-        target="_blank"
-        href= "https://www.instagram.com/phantoms187/">
-        <img src="./images/insta.png" alt="instagram" class="w3-image" width="35px" height="35px">
-        
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
     </a>
-    <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
-        target="_blank"
-        href= "https://www.linkedin.com/in/david-davis-cs187">
-        <img src="images/linked.png" alt="linked in" class="w3-image" width="50px" height="50px">
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
     </a>
-    <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black"
-        target="_blank"
-        href= "https://github.com/phantoms187">
-        <img src="./images/git.png" alt="github" class="w3-image" width="35px" height="35px">
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
     </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo w3-text-green"><span class="w3-hide-small"><h3>Hi! I'm </h3> </span> David Davis</h1>
-    <p>Instigator and Technical Connoisseur.</p>
-    <img src="./images/me_snow.png" alt="boy" class="w3-image" width="333" height="369">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-        Software engineer focusing on full stack design for web and mobile applications.
-    </p>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-  </div>
-  <!-- End About Section -->
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <img src="./images/comp_prog.PNG" style="width:100%"  width="300" height="311">
-      </div>
-      <div class="w3-third">    
-        <img src="./images/snow_jacket_tux.PNG" style="width:100%"  width="300" height="311">
-      </div>
-        <div class="w3-third">  
-        <img src="./images/moon.PNG" style="width:100%"  width="300" height="311">
-      </div>
-    <!-- End photo grid -->
+    
+    <div class="container social-buttons">
+      <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
+          target="_blank"
+          href= "https://www.facebook.com/dave.davis.3781995">
+          <img src="./images/facebook.png" alt="facebook" class="w3-image" width="35px" height="35px">
+          
+      </a>
+      <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
+          target="_blank"
+          href= "https://www.instagram.com/phantoms187/">
+          <img src="./images/insta.png" alt="instagram" class="w3-image" width="35px" height="35px">
+          
+      </a>
+      <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black" 
+          target="_blank"
+          href= "https://www.linkedin.com/in/david-davis-cs187">
+          <img src="images/linked.png" alt="linked in" class="w3-image" width="50px" height="50px">
+      </a>
+      <a  class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+          target="_blank"
+          href= "https://github.com/phantoms187">
+          <img src="./images/git.png" alt="github" class="w3-image" width="35px" height="35px">
+      </a>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <h4 class="w3-text-light-grey">David Davis</h4>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Portland, Oregon</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (321) 368-1453</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: warrend187@gmail.com</p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="mailto:warrend187@gmail.com" method="post" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+      
+  </nav>
+  
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
   </div>
   
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href= "https://www.facebook.com/dave.davis.3781995"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href= "https://www.instagram.com/phantoms187/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href= "https://www.linkedin.com/in/david-davis-cs187"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href= "https://github.com/phantoms187"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo w3-text-green"><span class="w3-hide-small"><h3>Hi! I'm </h3> </span> David Davis</h1>
+      <p>Instigator and Technical Connoisseur.</p>
+      <img src="./images/me_snow.png" alt="boy" class="w3-image" width="333" height="369">
+    </header>
+  
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">About</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+          Software engineer focusing on full stack design for web and mobile applications.
+      </p>
+  
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </div>
+    <!-- End About Section -->
+    
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Photos</h2>
+      <hr style="width:200px" class="w3-opacity">
+  
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third">
+          <img src="./images/comp_prog.PNG" style="width:100%"  width="300" height="311">
+        </div>
+        <div class="w3-third">    
+          <img src="./images/snow_jacket_tux.PNG" style="width:100%"  width="300" height="311">
+        </div>
+          <div class="w3-third">  
+          <img src="./images/moon.PNG" style="width:100%"  width="300" height="311">
+        </div>
+      <!-- End photo grid -->
+      </div>
+    <!-- End Portfolio Section -->
+    </div>
+  
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <h4 class="w3-text-light-grey">David Davis</h4>
+      <hr style="width:200px" class="w3-opacity">
+  
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Portland, Oregon</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (321) 368-1453</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: warrend187@gmail.com</p>
+      </div><br>
+      <p>Lets get in touch. Send me a message:</p>
+      <form action="mailto:warrend187@gmail.com" method="post" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    <!-- End Contact Section -->
+    </div>
+    
+      <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href= "https://www.facebook.com/dave.davis.3781995"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href= "https://www.instagram.com/phantoms187/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href= "https://www.linkedin.com/in/david-davis-cs187"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href= "https://github.com/phantoms187"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <!-- End footer -->
+    </footer>
+  
+  <!-- END PAGE CONTENT -->
+  </div>
 
 </body>
+
+<script src="script.js"></script>
+
 </html>

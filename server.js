@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/*', function(req, res) {
     res.sendFile(__dirname +"/index.html");
-  });
+});
   
 app.listen(PORT, function(){
   console.log('Server is running on Port:', PORT);
