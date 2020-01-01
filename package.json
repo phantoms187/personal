@@ -1,0 +1,19 @@
+{
+  "name": "dailystart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phantoms187/personal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phantoms187/personal/issues"
+  },
+  "homepage": "https://github.com/phantoms187/personal#readme"
+}
