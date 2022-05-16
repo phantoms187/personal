@@ -14,6 +14,8 @@ body, h1,h2,h3,h4,h5,h6 {
 
 .social-buttons {
    margin-top: 40px;
+   background: green;
+
 }
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
