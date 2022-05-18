@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/phantoms187/personal/issues"
   },
-  "homepage": "https://github.com/phantoms187/personal#readme"
+  "homepage": "https://github.com/phantoms187/personal#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }

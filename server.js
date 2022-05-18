@@ -7,7 +7,6 @@ app.use(express.static('Public'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-//app.use(express.static(path.join("client", "skatejoring", "build",)));
 
 app.get('/*', function(req, res) {
     res.sendFile(__dirname +"/index.html");
